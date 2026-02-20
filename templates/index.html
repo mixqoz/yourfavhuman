@@ -1,11 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>YourFavsHuman</title>
-</head>
-<body>
-	Sitnky
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='indexStyle.css') }}" />
+    <title>YourFavsHuman</title>
+  </head>
+  <body>
+    <!-- Items in block-brackets [] are placeholder names and shall be made responsive for the final product-->
+    <header>
+      <nav>
+        <a class="logo" href="/">[Logo</a>
+
+        <div class="center">
+          <a class="searchbar" href="#">[Searchbar]</a>
+        </div>
+
+        <ul class="right">
+          <li><a href="#">[Giveaway]</a></li>
+          <li><a class="menu" href="#">[Sliding Menu]</a></li>
+        </ul>
+        
+      </nav>
+    </header>
+
+    <br />
+    <hr />
+
+    <section>
+      <div id="product-content">
+        <div class="filter"></div>
+
+        <!-- First product -->
+        <div class="product">
+          <div class="product-image">[Product Image]</div>
+          <div class="product-name">[Product Name]</div>
+          <div class="product-description">[Product Description]</div>
+          <div class="product-price">[Product Price]</div>
+        </div>
+
+        <!-- Second product -->
+        <div class="product">
+          <div class="product-image">[Product Image]</div>
+          <div class="product-name">[Product Name]</div>
+          <div class="product-description">[Product Description]</div>
+          <div class="product-price">[Product Price]</div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

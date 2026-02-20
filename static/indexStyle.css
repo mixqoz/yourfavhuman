@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --color-dark: #1b1c22;
+  --color-gray: #737c8b;
+  --color-light: #edf2f4;
+  --color-red: #ef233c;
+  --color-red-dark: #d90429;
+
+  --text-light: #edf2f4;
+  --text-dark: #1b1c22;
+}
+
+body {
+  background: var(--color-dark);
+  color: var(--text-light);
+}
+section {
+  background: var(--color-light);
+  color: var(--text-dark);
+}
+
+
+
+nav {
+  background: var(--color-dark);
+  color: var(--text-light);
+  border-bottom: 2px solid var(--color-red);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Center area grows to push left and right apart */
+nav .center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Right-side menu items */
+nav ul.right {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+nav a:hover {
+  color: var(--color-red);
+}
+
