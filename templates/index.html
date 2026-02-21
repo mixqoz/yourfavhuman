@@ -6,9 +6,11 @@
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='indexStyle.css') }}" />
-    <title>YourFavsHuman</title>
+    <title>Comiker</title>
   </head>
   <body>
+
+
     <!-- Items in block-brackets [] are placeholder names and shall be made responsive for the final product-->
     <header>
       <nav>
@@ -28,12 +30,19 @@
  
 
     <br>
-    <hr>
 
 
-    <section>
+    <section class="aboutMeSection">
       <div class="aboutMe">
         <h1>About Me ♡</h1>
+
+        <div class="aboutMeContent">
+          <img class="comicOC" src="{{ url_for('static', filename='images/comicOC.png') }}">
+          <p>
+            [About Me Content]
+          </p>
+        </div>
+
       </div>
     </section>
 
@@ -62,5 +71,8 @@
         </div>
       </div>
     </section>
+
+
+
   </body>
 </html>

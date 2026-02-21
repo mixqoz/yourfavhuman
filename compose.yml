@@ -4,7 +4,7 @@ services:
 
     build: .
 
-    container_name: yourfavhuman_app
+    container_name: comiker
 
     ports:
     - "2408:2408"
